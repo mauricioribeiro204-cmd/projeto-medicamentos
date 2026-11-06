@@ -1,0 +1,6 @@
+node_modules/
+*.backup.json
+*privado*.json
+*.zip
+.env*
+test-results/
