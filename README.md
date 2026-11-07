@@ -31,3 +31,5 @@ O app organiza registros; não prescreve, confirma interações ou orienta compe
 ## Validação desta atualização
 
 11 testes automatizados de recorrência, duração, atraso sem reagendamento, datas, validação, backups antigos e preservação do histórico. Fluxos conferidos no navegador com dados fictícios: cadastro, tomada atrasada com confirmação, edição e adição de medicamento, diário, calendário, exportação e reimportação. Layout inspecionado a 360 × 780. Não foi feita validação em aparelho físico iOS/Android nem garantia de alarmes, de entrega de notificações ou de acesso offline em todos os sistemas.
+
+Medicamentos prescritos ao deitar podem ser cadastrados sem horário fixo. Aparecem diariamente na agenda, não entram no contador de horários e não ficam atrasados com base em uma hora inventada. O registro guarda o horário real. A opção é armazenada como bedtime:true; nenhum dado pessoal integra o código público.
