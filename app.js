@@ -1,4 +1,4 @@
-import {localDay,addDays,doses,timesFor,validateState,snapshotRecords,nextScheduled,countdown} from './core.mjs';
+import {localDay,addDays,doses,timesFor,validateState,snapshotRecords,nextScheduled,countdown} from './core.mjs?v=3';
 const KEY='medicamentos.private.v1', $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let state={version:1,config:null,records:{},journal:{},reminders:false},view='hoje',day=localDay(),month=day.slice(0,7),filter='todas',loadError=false;
 try{const raw=localStorage.getItem(KEY);if(raw){state=validateState(JSON.parse(raw));state.reminders=JSON.parse(raw).reminders===true;}}catch{loadError=true;}
